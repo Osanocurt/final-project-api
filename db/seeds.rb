@@ -40,7 +40,7 @@ User.create!([{
   photo: "http://aldryngton.wokingham.sch.uk/wp-content/uploads/2014/11/Santa.jpg"
 }])
 
-Requests.create!([{
+Request.create!([{
   customer_id: 1,
   runner_id: 2,
   location_lat: "64",
@@ -56,7 +56,7 @@ Requests.create!([{
   latest_delivery: "6pm",
   }])
 
-Feedbacks.create!([{
+Feedback.create!([{
   customer_id: 4,
   runner_id: 2,
   request_id: 3,
