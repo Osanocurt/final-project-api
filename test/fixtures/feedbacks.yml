@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_id: 1
+  runner_id: 1
+  rating: 1.5
+  content: MyText
+  date: MyString
+
+two:
+  customer_id: 1
+  runner_id: 1
+  rating: 1.5
+  content: MyText
+  date: MyString

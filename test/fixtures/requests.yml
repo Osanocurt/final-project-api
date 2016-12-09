@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_id: 1
+  runner_id: 1
+  status_accepted: MyString
+  status_active: MyString
+  status_delivered: MyString
+  location: MyString
+  destination: MyString
+  value: 1.5
+  image: MyString
+  item_description: MyString
+  earliest_pickup: MyString
+  latest_pickup: MyString
+  earliest_delivery: MyString
+  latest_delivery: MyString
+
+two:
+  customer_id: 1
+  runner_id: 1
+  status_accepted: MyString
+  status_active: MyString
+  status_delivered: MyString
+  location: MyString
+  destination: MyString
+  value: 1.5
+  image: MyString
+  item_description: MyString
+  earliest_pickup: MyString
+  latest_pickup: MyString
+  earliest_delivery: MyString
+  latest_delivery: MyString
