@@ -15,7 +15,6 @@ class FeedbacksController < ApplicationController
 
   # POST /feedbacks
   def create
-    p current_user
     @feedback = Feedback.new(feedback_params)
     @feedback.customer = current_user
 
