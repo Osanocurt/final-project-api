@@ -43,12 +43,12 @@ User.create!([{
 Request.create!([{
   customer_id: 1,
   runner_id: 2,
+  image: "http://aldryngton.wokingham.sch.uk/wp-content/uploads/2014/11/Santa.jpg",
   location_lat: "64",
   location_lng: "87",
   destination_lng: "45",
   destination_lat: "21",
   value: 10.00,
-  image: "http://aldryngton.wokingham.sch.uk/wp-content/uploads/2014/11/Santa.jpg",
   item_description: "Shoe Box",
   earliest_pickup: "12pm",
   latest_pickup: "3pm",

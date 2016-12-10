@@ -3,6 +3,8 @@ Rails.application.routes.draw do
     resources :users, except: [:create]
     resources :feedbacks
     resources :requests
+    post 'requests/:id/accept', to: 'requests#accept'
+    post 'requests/:id/decline', to: 'requests#decline'
     post 'register', to: 'auth#register'
     post 'login', to: 'auth#login'
   end

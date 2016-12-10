@@ -15,8 +15,9 @@ class FeedbacksController < ApplicationController
 
   # POST /feedbacks
   def create
+    p current_user
     @feedback = Feedback.new(feedback_params)
-    @feedback.customer_id = current_user.id
+    @feedback.customer = current_user
 
     if @feedback.save
       render json: @feedback, status: :created, location: @feedback
