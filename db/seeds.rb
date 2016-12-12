@@ -22,7 +22,7 @@ User.create!([{
   photo: "http://aldryngton.wokingham.sch.uk/wp-content/uploads/2014/11/Santa.jpg"
 },{
   username: "Fred",
-  email: "fred.@ga.co",
+  email: "fred@ga.co",
   password: "password",
   password_confirmation: "password",
   full_name: "Fred Patrick",
@@ -31,7 +31,7 @@ User.create!([{
   photo: "http://aldryngton.wokingham.sch.uk/wp-content/uploads/2014/11/Santa.jpg"
 },{
   username: "Emilyi",
-  email: "emily.isacke@ga.co",
+  email: "emily@ga.co",
   password: "password",
   password_confirmation: "password",
   full_name: "Emily Isacke",

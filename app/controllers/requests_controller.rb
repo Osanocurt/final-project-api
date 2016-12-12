@@ -3,7 +3,7 @@ class RequestsController < ApplicationController
 
   # GET /requests
   def index
-    @requests = Request.all
+    @requests = Request.where(runner_id: nil)
 
     render json: @requests
   end
