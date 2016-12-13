@@ -40,6 +40,8 @@ User.create!([{
   photo: "http://aldryngton.wokingham.sch.uk/wp-content/uploads/2014/11/Santa.jpg"
 }])
 
+puts "Users were made..."
+
 Request.create!([{
   customer_id: 1,
   runner_id: 2,
@@ -56,6 +58,8 @@ Request.create!([{
   latest_delivery: "6pm",
   }])
 
+puts "Requests were made..."
+
 Feedback.create!([{
   customer_id: 4,
   runner_id: 2,
@@ -63,3 +67,6 @@ Feedback.create!([{
   rating: 3.4,
   content: "Great service"
   }])
+
+puts "Feedback was given..."
+puts "Seed file ran away sucessfully"
