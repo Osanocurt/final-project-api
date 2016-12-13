@@ -2,7 +2,7 @@ class AuthController < ApplicationController
   skip_before_action :authenticate_user!
 
   def register
-    user = User.new(user_params)
+    user = User.new(Uploader.upload(user_params))
     if user.save
       token = Auth.issue({id: user.id})
       render json: { token: token, user: UserSerializer.new(user) }, status: :ok
@@ -23,7 +23,7 @@ class AuthController < ApplicationController
 
   private
     def user_params
-      params.permit(:username, :email, :password, :password_confirmation)
+      params.permit(:username, :email, :password, :password_confirmation, :base64)
     end
 
 end

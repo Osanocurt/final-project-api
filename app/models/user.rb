@@ -5,4 +5,6 @@ class User < ApplicationRecord
   validates :password_confirmation, presence: true, on: :create
   has_many :jobs, class_name: "Request", foreign_key: "runner_id"
   has_many :requests, class_name: "Request", foreign_key: "customer_id"
+
+  mount_uploader :photo, ImageUploader
 end
