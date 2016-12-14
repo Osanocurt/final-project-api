@@ -2,7 +2,7 @@
   ActiveRecord::Base.connection.execute("TRUNCATE #{table_name} RESTART IDENTITY CASCADE")
 end
 
-User.create!([{
+users = User.create!([{
   username: "Mickyginger",
   email: "mike.hayden@ga.co",
   password: "password",
@@ -40,11 +40,15 @@ User.create!([{
   photo: "http://aldryngton.wokingham.sch.uk/wp-content/uploads/2014/11/Santa.jpg"
 }])
 
+mickyginger = users[0]  # customer
+curtis = users[1]       # runner
+fred = users[2]         # customer
+emily = users[3]        # runner
+
 puts "Users were made..."
 
 Request.create!([{
-  customer_id: 1,
-  runner_id: 2,
+  customer: mickyginger,
   image: "http://aldryngton.wokingham.sch.uk/wp-content/uploads/2014/11/Santa.jpg",
   location_lat: "64",
   location_lng: "87",
@@ -61,8 +65,8 @@ Request.create!([{
 puts "Requests were made..."
 
 Feedback.create!([{
-  customer_id: 4,
-  runner_id: 2,
+  customer: fred,
+  runner: curtis,
   request_id: 3,
   rating: 3.4,
   content: "Great service"

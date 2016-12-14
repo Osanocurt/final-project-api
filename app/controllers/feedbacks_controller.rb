@@ -3,7 +3,11 @@ class FeedbacksController < ApplicationController
 
   # GET /feedbacks
   def index
-    @feedbacks = Feedback.all
+    if current_user.user_type == "Runner"
+      @feedbacks = Feedback.where(runner_id: current_user.id)
+    else
+      @feedbacks = Feedback.where(customer_id: current_user.id)
+    end
 
     render json: @feedbacks
   end
