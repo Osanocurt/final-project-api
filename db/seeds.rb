@@ -43,7 +43,7 @@ users = User.create!([{
 mickyginger = users[0]  # customer
 curtis = users[1]       # runner
 fred = users[2]         # customer
-emily = users[3]        # runner
+# emily = users[3]        # runner
 
 puts "Users were made..."
 
@@ -67,7 +67,7 @@ puts "Requests were made..."
 Feedback.create!([{
   customer: fred,
   runner: curtis,
-  request_id: 3,
+  request_id: 1,
   rating: 3.4,
   content: "Great service"
   }])

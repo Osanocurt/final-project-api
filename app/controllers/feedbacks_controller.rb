@@ -51,6 +51,6 @@ class FeedbacksController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def feedback_params
-      params.require(:feedback).permit(:customer_id, :runner_id, :rating, :content, :date)
+      params.require(:feedback).permit(:customer_id, :runner_id, :rating, :content, :date, :request_id)
     end
 end
